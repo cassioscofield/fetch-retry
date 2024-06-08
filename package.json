@@ -1,5 +1,5 @@
 {
-  "name": "fetch-retry",
+  "name": "fetch-delay-retry",
   "version": "5.0.4",
   "description": "Extend any fetch library with retry functionality",
   "repository": "https://github.com/jonbern/fetch-retry.git",

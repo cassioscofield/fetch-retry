@@ -4,7 +4,7 @@
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.fetchRetry = factory());
 })(this, (function () { 'use strict';
 
-  var fetchRetry = function (fetch, defaults) {
+  var fetchDelayRetry = function (fetch, defaults) {
     defaults = defaults || {};
     if (typeof fetch !== 'function') {
       throw new ArgumentError('fetch must be a function');
@@ -169,6 +169,6 @@
     this.message = message;
   }
 
-  return fetchRetry;
+  return fetchDelayRetry;
 
 }));
